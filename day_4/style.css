@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(40, 40, 40);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 120px;
+}
+
+#light{
+    width: 100px;
+    height: 110px;
+    border-radius: 60px;
+   transition: 1s;
+
+}
+
+.lightoff{
+border: 3px solid rgb(145, 240, 4);
+}
+.lighton{
+    background-color: rgb(145, 240, 4);
+    border: 5px solid rgb(145, 240, 4);
+    box-shadow: 0px 0px 100px rgb(145, 240, 4),0px 0px 100px rgb(145, 240, 4),0px 0px 100px rgb(145, 240, 4),0px 0px 100px rgb(145, 240, 4);
+}
+.buttonbox{
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.buttonbox button{
+    font-size: 24px;
+    text-transform: uppercase;
+    border: black;
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 7px;
+    cursor: pointer;
+
+    background-color: transparent;
+    color: aliceblue;
+    font-weight: 600;
+    
+}
+.buttonbox button:first-child{
+    background-color: rgb(145, 240, 4);
+}
+.buttonbox button:last-child{
+    background-color: rgb(254, 3, 3);
+}
